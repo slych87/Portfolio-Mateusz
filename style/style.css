@@ -25,14 +25,11 @@ header img {
     border-radius: 10%;
 }
 
-header .welcome{
+header div.welcome{
     position: absolute;
     top: 5%;
     left: 5%;
     right:5%;
-}
-
-header div {
     text-align: center;
     font-family: 'Siera Condense', sans-serif;
     font-weight: bold;
@@ -64,6 +61,84 @@ header button{
     border: 2px solid white;
 }
 
+@media(orientation: portrait) and (min-width: 360px){
+    header div.welcome{
+        top: 10%;        
+    }
+    button {
+        margin-top: 30px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 411px){
+        
+    header p{
+        font-size: 43px;
+    }
+    
+    header h1{
+        font-size: 23px;         
+    }
+    
+    header h2{
+        font-size: 20px;
+    }
+
+    header button{
+        font-size: 17px;
+        line-height: 45px;
+    }
+}
+
+@media(orientation: landscape){
+    header img{
+        height: 55%;
+        transform: translate(0);
+        top: 25%;
+        left: 5%;
+    }
+
+    header div.welcome{
+        top: 20%;
+        left: 35%;
+        right: 5%;
+    }
+
+    header h1 {
+        margin-top: 40px;
+    }
+    button {
+        margin-top: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px){
+    header img{
+        height: 65%;
+        top: 20%;
+        left: 5%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 731px){
+    header p{
+        font-size: 43px;
+    }
+    
+    header h1{
+        font-size: 23px;         
+    }
+    
+    header h2{
+        font-size: 20px;
+    }
+
+    header button{
+        font-size: 17px;
+        line-height: 45px;
+    }
+}
+}
 
 section {
     min-height: 100vh;
