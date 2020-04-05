@@ -12,7 +12,7 @@ header > * {
 }
 
 header {
-    background-color: #000000d1;
+    background-color: #000000b7;
     color: white;
     height: 100vh;    
 }
@@ -26,6 +26,7 @@ header img {
 }
 
 header div.welcome{
+    z-index: 1;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -65,7 +66,7 @@ header button{
     header div.welcome{
         top: 10%;        
     }
-    button {
+    header button {
         margin-top: 30px;
     }
 }
@@ -90,6 +91,44 @@ header button{
     }
 }
 
+@media (orientation: portrait) and (min-width: 768px){
+    header p{
+        font-size: 80px;
+    }
+    
+    header h1{
+        font-size: 31px;         
+    }
+    
+    header h2{
+        font-size: 28px;
+    }
+
+    header button{
+        font-size: 22px;
+        line-height: 50px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1024px){
+    header p{
+        font-size: 90px;
+    }
+    
+    header h1{
+        font-size: 40px;         
+    }
+    
+    header h2{
+        font-size: 35px;
+    }
+
+    header button{
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
+
 @media(orientation: landscape){
     header img{
         height: 55%;
@@ -107,14 +146,20 @@ header button{
     header h1 {
         margin-top: 40px;
     }
-    button {
+    header button {
         margin-top: 20px;
     }
 }
 
 @media (orientation: landscape) and (min-width: 640px){
+    header div.welcome{
+        top: 20%;
+        left: 50%;
+        right: 1%;
+    }
+
     header img{
-        height: 65%;
+        height: 60%;
         top: 20%;
         left: 5%;
     }
@@ -138,8 +183,69 @@ header button{
         line-height: 45px;
     }
 }
+
+@media (orientation: landscape) and (min-width: 1024px){
+   header div.welcome{
+        top: 26%;
+        left: 45%;
+        right: 1%;
+    }
+
+    header p{
+        font-size: 70px;
+    }
+
+    header h1 {
+        margin-top: 50px;
+        font-size: 34px;
+    }
+
+    header h2{
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    header button {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1280px){
+    header div.welcome{
+        top: 23%;
+        left: 30%;
+        right: 1%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1366px){
+    header img{
+        height: 65%;
+    }
+    
+    header p{
+        font-size: 80px;
+    }
+
+    header h1 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    header h2{
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    header button {
+        margin-top: 30px;
+        line-height: 55px;
+        font-size: 30px;
+    }
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
 }
