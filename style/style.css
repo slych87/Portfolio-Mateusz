@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
 header > * {
     position: absolute;
 }
@@ -271,6 +277,87 @@ header button{
     }
 }
 
-section {
+section .features{
+    min-height: 30vh;
+}
+
+/* SECTION 1 */
+.features{
+    margin-top: 20px;
+    padding: 5%;
+    text-align: center;
+    max-width: 1620px;
+}
+.features h1{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.features h2{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.features img{
+    width: 100%;
+    margin: 20px 0;
+    max-width: 375px;
+}
+@media (min-width: 360px) and (orientation: portrait){
+    .features h1{
+        font-size: 28px;
+    }
+    .features h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait){
+    .features h1{
+        font-size: 40px;
+    }
+    .features h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 533px) and (orientation: landscape){
+    .features h1{
+        font-size: 36px;
+    }
+    .features h2 {
+        font-size: 26px;
+    }
+    .features img{
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1024px) and (orientation: landscape){
+    .feature{
+        float: left;
+        width: 33%;
+        padding: 1%;
+    }
+    
+    .features h1{
+        font-size: 40px;
+    }
+    .features h2 {
+        font-size: 29px;
+    }
+    .features img{
+        width: 100%;
+    }
+
+
+}
+
+section{
     height: 100vh;
 }
+
