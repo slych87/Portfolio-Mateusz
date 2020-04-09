@@ -265,6 +265,32 @@ header button{
     }
 }
 
+@media (orientation: landscape) and (min-width: 1620px){
+    
+    header div.welcome{
+        top: 30%;
+    }
+
+    header p{
+        font-size: 80px;
+    }
+
+    header h1 {
+       font-size: 45px;
+    }
+
+    header h2{
+        font-size: 35px;
+    }
+
+    header button {
+        margin-top: 40px;
+        line-height: 70px;
+        font-size: 32px;
+        padding: 0 40px;
+    }
+}
+
 @media (min-width: 1024px){
     header button{
         cursor: pointer;
@@ -357,7 +383,86 @@ section .features{
 
 }
 
-section{
-    height: 100vh;
+@media (min-width: 1620px) and (orientation: landscape){
+    .feature{
+        float: left;
+        width: 33%;
+        padding: 1%;
+    }
+    
+    .features h1{
+        font-size: 60px;
+    }
+    .features h2 {
+        font-size: 34px;
+    }
+    .features img{
+        width: 100%;
+    }
+
+
 }
 
+/* SECTION 2 */
+
+.portfolio{
+    background-color: black;
+    padding: 10px 0 30px 0;
+}
+
+.portfolio h1{
+     font-size: 28px;
+     font-family: 'Saira Condensed', sans-serif;
+     text-transform: uppercase;
+     color: white;
+     text-align: center;
+     padding: 10px 5px;
+}
+.portfolio .info{
+     font-size: 18px;
+     font-family: 'Saira Condensed', sans-serif;
+     text-transform: uppercase;
+     color: white;
+     text-align: center;
+     padding: 10px 5px;
+}
+.portfolio .web img{
+    width: 100%;
+}
+
+.portfolio .about{
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0 ;
+    text-align: left;    
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+    padding-left: 20px;
+}
+.portfolio .about p{
+    font-size: 12px;
+    padding-left: 20px;
+}
+.portfolio .project{
+    margin-bottom: 20px;
+}
+.portfolio .project:nth-child(odd){
+    background-color: #EEAF18;
+}
+.portfolio .project:nth-child(odd) h2{
+    color: black;
+    border-bottom: 2px solid black;
+    
+}
+.portfolio .project:nth-child(odd) p{
+    color: black;
+}
+.portfolio .project:nth-child(even){
+    background-color: #00bfff49;
+}
