@@ -309,7 +309,7 @@ section .features{
 
 /* SECTION 1 */
 .features{
-    margin-top: 20px;
+    margin: 20px auto 0;
     padding: 5%;
     text-align: center;
     max-width: 1620px;
@@ -408,6 +408,8 @@ section .features{
 .portfolio{
     background-color: black;
     padding: 10px 0 30px 0;
+    max-width: 1620px;
+    margin: 0 auto;
 }
 
 .portfolio h1{
@@ -450,7 +452,8 @@ section .features{
     padding-left: 20px;
 }
 .portfolio .project{
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    max-width: 1400px;
 }
 .portfolio .project:nth-child(odd){
     background-color: #EEAF18;
@@ -465,4 +468,86 @@ section .features{
 }
 .portfolio .project:nth-child(even){
     background-color: #00bfff49;
+}
+@media (min-width: 768px) and (orientation: portrait){
+    #enter span::after{
+        content: '\A';
+        white-space: pre;               
+    }
+}
+@media (min-width: 768px){
+    .portfolio h1{
+        font-size: 40px;
+    }
+    .portfolio .project{
+        margin-bottom: 40px;
+    }
+    .portfolio .info{
+        font-size: 30px;
+        padding: 0 43px 30px;
+    }
+    .portfolio .about h2{
+        font-size: 28px;       
+        padding-left: 40px;
+    }
+    .portfolio .about p{
+        font-size: 18px;
+        padding-left: 40px;
+    }    
+}
+
+@media (orientation: landscape){
+    .portfolio .info{
+        font-size: 22px;
+        padding: 0 43px 30px;
+    }
+    
+    .web, .about{
+        width: 50%;
+        float:left
+    }
+    .web img{
+        display: block;
+    }
+    .portfolio .project:nth-child(even) .web{
+        float: right;
+    }
+    .portfolio .project:nth-child(even) .about{
+        padding-right: 0;
+        padding-left: 20px;        
+    }
+    .portfolio .project:nth-child(even) .about h2{
+        padding-left: 0;        
+    }
+    .portfolio .project:nth-child(even) .about p{
+        padding-left: 0;        
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1366px){
+    .portfolio h1{
+        font-size: 60px;
+        padding: 30px;
+    }
+    .portfolio .project{
+        margin-bottom: 40px;
+    }
+    .portfolio .info{
+        font-size: 40px;
+        padding: 0 227px 30px;
+    }
+    .portfolio .about h2{
+        padding-top: 50px;
+        font-size: 28px;       
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+    .portfolio .about p{
+        font-size: 18px;
+        padding-left: 40px;
+    }
+    #enter span::after{
+        content: '\A';
+        white-space: pre;               
+    }
 }
