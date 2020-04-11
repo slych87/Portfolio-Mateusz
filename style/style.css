@@ -172,8 +172,35 @@ header button{
 @media (orientation: landscape) and (min-width: 600px){
     header div.welcome{
         top: 20%;
+        left: 52%;
+        right: 1%;
+    }
+
+    header img{
+        height: 60%;
+        top: 20%;
+        left: 3%;
+    }
+    header p{
+        font-size: 38px;
+    }
+    
+    header h1{
+        font-size: 20px;         
+    }
+    
+    header h2{
+        font-size: 17px;
+    }
+
+    header button{
+        font-size: 14px;
+        line-height: 35px;
+    }
+}
+@media (orientation: landscape) and (min-width: 660px){
+    header div.welcome{
         left: 48%;
-        right: 3%;
     }
 
     header img{
@@ -182,7 +209,6 @@ header button{
         left: 5%;
     }
 }
-
 @media (orientation: landscape) and (min-width: 731px){
     header p{
         font-size: 43px;
