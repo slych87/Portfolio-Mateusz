@@ -192,7 +192,7 @@ header button{
     header h2{
         font-size: 17px;
     }
-
+ 
     header button{
         font-size: 14px;
         line-height: 35px;
@@ -333,7 +333,7 @@ section .features{
     min-height: 30vh;
 }
 
-/* SECTION 1 */
+/* SECTION 1 */ /*Technologies*/
 .features{
     margin: 20px auto 0;
     padding: 5%;
@@ -429,7 +429,7 @@ section .features{
 
 }
 
-/* SECTION 2 */
+/* SECTION 2 */ /*Portfolio*/
 
 .portfolio{
     background-color: black;
@@ -576,4 +576,182 @@ section .features{
         content: '\A';
         white-space: pre;               
     }
+}
+
+/* SECTION 3*/ /*About me*/
+.me {
+    background-image: url(../img/JOB.png);
+    background-size: cover;
+    background-position: top center;
+    min-height: 30vh;
+    margin: 0 auto;
+    max-width: 1620px;
+    
+}
+
+.me div{
+    text-align: center;
+    padding: 30px 5%;
+    color: white;
+    background-color: rgba(0,63,114,0.7);  
+    min-height: 30vh; 
+}
+
+.me h1{
+    font-family: 'SairaConded', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.me p{
+    font-family:'Saira', sans-serif;
+}
+@media (min-width: 550px){
+    .me div{      
+        padding: 7% 10%;
+    }  
+
+    .me div h1{
+        font-size: 32px;
+    }
+    .me div p{
+        font-size: 20px;
+    }
+
+}
+@media (min-width: 700px){
+    .me div{      
+        padding: 7% 10%;
+    }  
+
+    .me div h1{
+        font-size: 38px;
+    }
+    .me div p{
+        font-size: 25px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1024px){
+    .me div h1{
+        font-size: 38px;
+    }
+    .me div p{
+        font-size: 25px;
+    }
+
+}
+
+/*Section hobby*/
+.hobby{
+    max-width: 1620px;
+    margin: 0 auto;
+    background-color: black;
+}
+.hobby .item{
+    height: 75vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+}
+.hobby .item:nth-of-type(1){
+    background-image: url(/img/bike-winter\ 2\ 940x720.jpg);    
+}
+.hobby .item:nth-of-type(2){
+    background-image: url(/img/Programing\ 437x720.jpg);
+}
+.hobby .item:nth-of-type(3){
+    background-image: url(/img/Configuration\ Dahua\ 1283x720.jpg);
+}
+.hobby .item:nth-of-type(4){
+    background-image: url(/img/PCupgrade\ 1\ 940x720.jpg); 
+}
+.hobby h1{
+    font-family: 'saira', sans-serif;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+}
+.hobby .item img{
+    display: inline-block;
+}
+.hobby .item p{
+    font-size: 20px;
+    font-family: 'saira',sans-serif;
+    color: white;    
+    text-shadow: 0 0 4px black; 
+    margin-top: 40%;  
+    padding: 2px 10%;   
+    background-color: #00000080;     
+}
+@media (min-width:533px){
+    .hobby{
+        background-color: black;
+    }
+    .hobby h1{
+        padding: 43px 27px;
+        font-size: 26px;
+    }
+    .hobby .item{
+        height: 37.5vw;
+        background-position: top center;      
+        float: left;
+        width: 50%;
+    }
+    .hobby .item p{
+        margin-top: 41%;
+        font-size: 15px;
+    }
+}
+@media (min-width: 640px){
+    .hobby h1{
+        font-size: 36px;
+    }
+    .hobby .item p{
+        font-size: 20px;
+    }
+}
+@media (min-width: 731px){
+    .hobby h1{
+        font-size: 36px;
+    }
+    .hobby .item p{
+        font-size: 23px;
+    }
+}
+@media (min-width: 1024px){
+    .hobby h1{
+        font-size: 45px;
+    }
+    .hobby .item p{
+        font-size: 33px;
+        margin-top: 0;
+        padding-top: 35%;
+        padding-bottom: 35%;
+        opacity: 0;
+        transition: 1s;
+    }
+    .hobby .item:hover p{
+        opacity: 1;
+    }
+
+    .hobby .item{
+        background-size: 100%;
+    }
+    .hobby .item:hover{
+        background-size: 120%;
+    }
+
+
+}
+
+
+
+
+footer{
+    height: 100vh ;
 }
