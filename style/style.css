@@ -595,6 +595,7 @@ section .features{
     color: white;
     background-color: rgba(0,63,114,0.7);  
     min-height: 30vh; 
+    
 }
 
 .me h1{
@@ -676,9 +677,6 @@ section .features{
     color: white;
     text-align: center;
 }
-.hobby .item img{
-    display: inline-block;
-}
 .hobby .item p{
     font-size: 20px;
     font-family: 'saira',sans-serif;
@@ -686,7 +684,8 @@ section .features{
     text-shadow: 0 0 4px black; 
     margin-top: 40%;  
     padding: 2px 10%;   
-    background-color: #00000080;     
+    background-color: #00000080; 
+    max-height: 618px;    
 }
 @media (min-width:533px){
     .hobby{
@@ -697,8 +696,10 @@ section .features{
         font-size: 26px;
     }
     .hobby .item{
-        height: 37.5vw;
-        background-position: top center;      
+        height: 36vw;
+        max-height: 600px;
+        background-position: top center;  
+        background-size: 100%;    
         float: left;
         width: 50%;
     }
@@ -738,20 +739,12 @@ section .features{
     .hobby .item:hover p{
         opacity: 1;
     }
-
-    .hobby .item{
-        background-size: 100%;
-    }
     .hobby .item:hover{
         background-size: 120%;
     }
-
-
 }
 
-
-
-
+/* FOOTER */
 footer{
-    height: 100vh ;
+    height: 25vh ;
 }
