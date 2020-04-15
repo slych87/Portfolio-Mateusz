@@ -23,7 +23,7 @@ header {
     overflow: hidden;   
     max-width: 1620px;
     margin: 0 auto;
-    background-image: url(/img/Pompei.jpg);
+    background-image: url("../img/Pompei.jpg");
     background-attachment: fixed;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -645,7 +645,7 @@ section .features{
 
 }
 
-/*Section hobby*/
+/*SECTION 4*/ /*Section hobby*/
 .hobby{
     max-width: 1620px;
     margin: 0 auto;
@@ -661,16 +661,16 @@ section .features{
     text-align: center;
 }
 .hobby .item:nth-of-type(1){
-    background-image: url(/img/bike-winter\ 2\ 940x720.jpg);    
+    background-image: url(../img/bike-winter\ 2\ 940x720.jpg);    
 }
 .hobby .item:nth-of-type(2){
-    background-image: url(/img/Programing\ 437x720.jpg);
+    background-image: url(../img/Programing\ 437x720.jpg);
 }
 .hobby .item:nth-of-type(3){
-    background-image: url(/img/Configuration\ Dahua\ 1283x720.jpg);
+    background-image: url(../img/Configuration\ Dahua\ 1283x720.jpg);
 }
 .hobby .item:nth-of-type(4){
-    background-image: url(/img/PCupgrade\ 1\ 940x720.jpg); 
+    background-image: url(../img/PCupgrade\ 1\ 940x720.jpg); 
 }
 .hobby h1{
     font-family: 'saira', sans-serif;
@@ -744,33 +744,43 @@ section .features{
         background-size: 120%;
     }
 }
-/* section 4 */ /*Contact*/
-.contact{
-    background-color: #000;
-    padding: 30px 20px;
+/* section 5 */ /*Contact*/
+ .contact{
+     background-color: #000;
+     padding: 30px 20px;
+     max-width: 1620px;
+     margin: 0 auto;
+ }
+ .contact h1{
+     font-family: 'Saira Condensed', sans-serif;
+     font-size: 26px;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+     color: white;
+     text-align: center;
+ }
+.contact .wrap{
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
 }
-.contact h1{
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 26px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    color: white;
-    text-align: center;
-}
-.contact input, .contact button, .contact textarea{
-    width: 100%;
-    margin-bottom: 25px;
-    font-size: 12px;
-    padding: 5px;
-}
-.contact input{
+
+ .contact input,
+  .contact button,
+   .contact textarea{
+     width: 100%;
+     margin-bottom: 25px;
+     font-family: 'saira', sans-serif;
+     font-size: 12px;
+     padding: 5px;
+ }
+ 
+ .contact input{
      height: 36px;
-}
-
-.contact textarea{
-    height: 120px;
-}
-
+ }
+ .contact textarea{
+     height: 120px;
+ }
 .contact button{
     font-size: 14px;
     line-height: 40px;
@@ -779,8 +789,108 @@ section .features{
     border: 2px solid white;
 }
 
+.contact .socials{
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social{
+    padding: 10px 0;
+    color: white;
+    font-family: saira condensed,sans-serif;
+}
+
+.contact .social img{
+    float: left;
+}
+
+.contact .social span{
+    line-height: 72px; 
+    padding-left: 20px;
+    float: left;
+    font-size: 15px;
+}
+ 
+@media(min-width:360px){
+    .contact .social span{
+        font-size: 19px;
+    }  
+    
+}
+
+
+@media (min-width: 533px){
+    .contact .social{
+        display: inline-block;
+        width: 50%;
+    }
+    .contact .social span{
+        font-size: 13px;
+    }
+}
+
+@media(min-width:640px){
+    .contact .social span{
+        font-size: 18px;
+    }       
+}
+
+@media(min-width:768px){
+    .contact .social span{
+        font-size: 22px;
+    }       
+}
+
+@media(min-width:1024px){
+    .contact h1{
+        font-size: 60px;
+        padding: 30px 0;
+    }
+    .contact form, .contact .socials{
+        float: left;
+        width: 50%;
+        padding: 0;
+    }
+    .contact .social{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    .contact input,
+    .contact button,
+    .contact textarea{
+        margin-bottom: 25px;
+
+    }
+    .contact input{
+        height: 46px;
+        font-size: 24px;
+    }
+    .contact textarea{
+        height: 180px;
+        font-size: 24px;
+    }
+   .contact button{
+       font-size: 20px;
+       line-height: 50px;
+    }
+    .contact button:hover{
+        color: black;
+        background-color: #ffff;
+    }
+    .contact .social span{
+        font-size: 20px;
+    }
+}
+
 
 /* FOOTER */
 footer{
-    height: 25vh ;
+    background-color: #455055;
+    color: white;
+    font-family: 'saira', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
 }
